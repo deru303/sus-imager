@@ -16,7 +16,6 @@ on a Discord server.
 ## How to deploy?
 1. **Directly by using Python intepreter**
    ```shell
-   cd bot/
    python3 -m pip install requirements.txt
    export DC_IMAGER_TOKEN="YOUR-DISCORD-BOT-TOKEN-HERE"
    python3 main.py

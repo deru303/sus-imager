@@ -1,7 +1,7 @@
 import os
 import discord
-from embed_service import EmbedService
-from image_service import ImageService
+from bot.embed_service import EmbedService
+from bot.image_service import ImageService
 
 
 bot = discord.Bot()
