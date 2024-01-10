@@ -1,4 +1,7 @@
 # dc-imager
+[![ci](https://github.com/danrog303/dc-imager/actions/workflows/ci.yml/badge.svg)](https://github.com/danrog303/dc-imager/actions/workflows/ci.yml)
+![license](https://img.shields.io/github/license/danrog303/dc-imager)
+![last commit](https://img.shields.io/github/last-commit/danrog303/dc-imager)
 > Configurable image bot for Discord.
 
 ## Project summary
