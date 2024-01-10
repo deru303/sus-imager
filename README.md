@@ -9,6 +9,7 @@ on a Discord server.
 
 ## Project structure
 - **bot/** - contains source code of Discord bot
+- **tests/** - contains some basic unit tests
 - **images/** - contains image library; 
   bot will automatically detect changes in this directory
   and will send images that are present here
@@ -26,6 +27,12 @@ on a Discord server.
    docker build -t dc-imager .
    docker run -e "DC_IMAGER_TOKEN=YOUR-BOT-TOKEN-HERE" dc-imager
    ```
+
+## How to run tests?
+You can run Python unit tests by calling this command:
+```shell
+python3 -m unittest discover tests/
+```
 
 ## Available Discord commands
 | Command             | Description  |

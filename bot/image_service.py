@@ -19,7 +19,7 @@ class ImageService:
             os.path.join(dir_path, file) for file
             in content
             if os.path.isfile(os.path.join(dir_path, file))
-            and os.path.splitext(file)[1] in ['.jpg', '.jpeg', '.png', '.gif', '.webp']
+            and os.path.splitext(file)[1] in cls._get_allowed_img_extensions()
         ]
 
     @classmethod
@@ -28,6 +28,10 @@ class ImageService:
         cur_dir = os.path.dirname(os.path.realpath(__file__))
         img_dir = os.path.join(cur_dir, "..", "images")
         return os.path.realpath(img_dir)
+
+    @classmethod
+    def _get_allowed_img_extensions(cls) -> List[str]:
+        return ['.jpg', '.jpeg', '.png', '.gif', '.webp']
 
     @classmethod
     def _get_available_categories(cls) -> List[str]:
