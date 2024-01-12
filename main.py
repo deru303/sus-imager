@@ -1,5 +1,6 @@
 import os
 import discord
+from bot.activity_service import ActivityService
 from bot.embed_service import EmbedService
 from bot.image_service import ImageService
 
@@ -7,6 +8,7 @@ from bot.image_service import ImageService
 bot = discord.Bot()
 image_service = ImageService()
 embed_service = EmbedService()
+activity_service = ActivityService(bot, image_service)
 
 
 async def img_category_autocomplete(ctx: discord.AutocompleteContext):
@@ -46,6 +48,11 @@ async def img_categories(ctx):
     await ctx.respond(embed=embed)
 
 
+@bot.event
+async def on_ready():
+    activity_service.set_discord_activity.start()
+
+
 if __name__ == "__main__":
     token = os.getenv("DC_IMAGER_TOKEN")
     if token:
@@ -54,4 +61,3 @@ if __name__ == "__main__":
         print("Discord bot authentication token not specified!")
         print("You need to set DC_IMAGER_TOKEN environment variable for the bot to work.")
         exit(1)
-
