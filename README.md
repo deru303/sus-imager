@@ -1,14 +1,19 @@
-# dc-imager
-[![ci](https://github.com/danrog303/dc-imager/actions/workflows/ci.yml/badge.svg)](https://github.com/danrog303/dc-imager/actions/workflows/ci.yml)
-![license](https://img.shields.io/github/license/danrog303/dc-imager)
-![last commit](https://img.shields.io/github/last-commit/danrog303/dc-imager)
-> Configurable image bot for Discord.
+# sus-imager
+[![ci](https://github.com/deru303/sus-imager/actions/workflows/ci.yml/badge.svg)](https://github.com/deru303/sus-imager/actions/workflows/ci.yml)
+![license](https://img.shields.io/github/license/deru303/sus-imager)
+![last commit](https://img.shields.io/github/last-commit/deru303/sus-imager)
+> Anime image bot for Discord.
 
 ## Project summary
-**dc-imager** provides a Discord bot which allows to send random images
+**sus-imager** provides a Discord bot which allows to send random anime images
 on a Discord server.
-![egCMD](https://github.com/danrog303/danrog303/assets/32397526/a038ca5d-ffc3-4e02-88d5-0128f16cc1d4)
+![susbot](https://github.com/deru303/sus-imager/assets/82843647/e310b063-df55-4791-a100-02b576f6a381)
 
+**sus-imager** uses **danrog303/dc-imager** repo as its base. While **danrog303/dc-imager** provides bot functionality and its core features, **sus-imager** provides thousands of anime pictures that can be used by the bot.
+
+## How to invite?
+You can use this link in order to invite this bot to your Discord server:  
+https://discord.com/api/oauth2/authorize?client_id=835439136709672961&permissions=2147534912&scope=bot
 
 ## Project structure
 - **bot/** - contains source code of Discord bot
@@ -46,3 +51,4 @@ python3 -m unittest discover tests/
 ## Possible improvements
 1. Add **/img-bind** command, which will allow to automatically send 
    images to a Discord channel (e.g. every day at 12:00).
+
